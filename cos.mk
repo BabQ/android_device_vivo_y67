@@ -14,11 +14,11 @@
 
 $(call inherit-product, device/vivo/y67/full_y67.mk)
 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 PRODUCT_RELEASE_NAME := VIVO Y67
 
-PRODUCT_NAME := lineage_y67
+PRODUCT_NAME := cos_y67
 BOARD_VENDOR := vivo
 PRODUCT_DEVICE := y67
 
@@ -43,9 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_NAME=VIVO-Y67 \
    BUILD_FINGERPRINT=vivo/PD1612/PD1612:6.0/MRA58K/1503320571:user/release-keys \
    PRIVATE_BUILD_DESC="full_bbk6750_66_m-user 6.0 MRA58K 1503320571 release-keys"
-
-# OTA更新
-UPDATER_RUL := "https://succerseng.top/updater/pd1612/update.json"
-PRODUCT_PROPERTY_OVERRIDES += \
-    cm.updater.uri=$(UPDATER_RUL)
-    ro.cm.releasetype=UNOFFICIAL

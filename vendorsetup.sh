@@ -13,5 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_lunch_combo lineage_y67-user
-add_lunch_combo lineage_y67-userdebug
+add_lunch_combo cos_y67-userdebug
